@@ -1,0 +1,48 @@
+@keyframes sliding{
+    0%,10%{
+        background-image: url('christopher-gower-291246-unsplash.jpg');
+    }
+    39%,49%{
+        background-image: url('blur-blurred-blurred-background-1187974.jpg');
+    }
+    79%,100%{
+        background-image: url('blur-colorful-colourful-21492.jpg');
+    }
+}
+@keyframes fade{
+    from{opacity: 1;}
+    to{opacity: 0;
+    display: none;}
+}
+@keyframes show{
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+@media screen and (min-width:768px){
+    #landing-page{
+    background-repeat: round;
+    width: 100%; /*background-size:100%;
+    animation-name: sliding;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;*/
+}
+}
+.show{
+    animation-name: show;
+    animation-delay: 0s;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+.fading{
+    animation-name: fade;
+    animation-delay: 0.1s;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}

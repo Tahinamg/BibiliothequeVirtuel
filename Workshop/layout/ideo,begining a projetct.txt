@@ -1,0 +1,45 @@
+outil de bureautiqu
+latex,lyx ny interface
+pencil avec taratasy tous commence par une idee avec un crayon et un stylo
+for begining a project: idee aloha vo midev
+data structure:
+list 
+hash 
+stack
+zarazarao anjakana
+ OS
+
+
+ Gentoo
+ arch
+
+ shell site tutorial
+ awesome bash
+ cli
+ vim
+ editor text
+ emacs
+ vii
+ atom
+spacemacs
+
+ux phyloisophy
+write programs that do one things and do it well
+write programs to work together
+write programs to handle text sreams, because that is a universal interface
+Langage
+paradigme:poo ou programme functionnel 
+lisp ou lips langage de programmation tsara enarana
+regex
+outil tsara ilaina
+
+Design pattern 
+google is a crucial developer skill
+2 things so difficult:
+naming things;
+cache browser
+
+style codes mijery fona mijery azy;
+stylecodes
+mizara
+faut pas reinvente la roue
