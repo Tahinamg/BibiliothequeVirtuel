@@ -1,3 +1,11 @@
+<?php
+if(isset($_COOKIE['name'],$_COOKIE['username'],$_COOKIE['matricule'],$_COOKIE['password'])&&$_COOKIE['name']=="name"&&$_COOKIE['username']=="student"&&$_COOKIE['matricule']=="ntic"&&$_COOKIE['password']==12345678){
+    header("Location:Home.php");
+   //detruire l'acces au cookie setcookie('password',"",0,"/");
+}
+//code permettant d'acceder au home.php et de connexion automatique
+//pour reentrer ver la index: avadika 1 ilay timestamp ilay setcookie
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -25,7 +33,7 @@
             <p class="mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi doloribus perferendis quod officia quae repellendus aliquid dignissimos corporis expedita ipsa. Labore ipsam sequi quod ut vero sunt iste minus ullam!</p>
             <button type="button" class="mx-auto float-right btn btn-sm btn-outline-primary">Entrez dans le bibliotheque</button>
             
-            <form class="mx-auto w-50 w-100 my-5 position-relative" action="traitement.php" method="post">
+            <form class="mx-auto w-50 w-100 my-5 position-relative" action="Home.php" method="post">
                 <div class="text-center">
                     <i class="far fa-user-circle fa-4x" style="top:25px;"></i>
                 </div>
@@ -37,15 +45,15 @@
                 </div>
                     <div class="form-group" style="clear:both;">
                         <label for="nom">Nom</label>
-                        <input type="text" class="form-control" name="Name" id="nom"/>
+                        <input type="text" class="form-control" name="name" id="nom"/>
                     </div>
                     <div class="form-group">
                           <label for="prenom">Prénoms</label>
-                          <input type="text" class="form-control" name="Username" id="prenom"/>
+                          <input type="text" class="form-control" name="username" id="prenom"/>
                     </div>
                     <div class="form-group">
                         <label for="codeId">Matricule</label>
-                        <input class="form-control" type="text" name="codeId" id="codeId"/>
+                        <input class="form-control" type="text" name="matricule" id="codeId"/>
                     </div>
                     <div class="form-group">
                             <label for="pass">Mot de passe</label>
@@ -53,6 +61,7 @@
                     </div>
     
                 </div>
+                    <input type="submit" value="connectez"/>
             </form>     
        </div>
     
